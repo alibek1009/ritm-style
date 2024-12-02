@@ -34,6 +34,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header-menu {
   margin: 0;
@@ -44,7 +47,7 @@ body {
   display: flex;
   gap: 50px;
 }
-.header-menu {
+.header-link {
   color: white;
   font-family: Roboto;
   font-size: 14px;
@@ -58,7 +61,7 @@ body {
   color: white;
   font-family: "Roboto";
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 140%;
   letter-spacing: 0%;
   text-align: left;

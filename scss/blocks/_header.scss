@@ -8,13 +8,15 @@
   &-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   &-menu {
     @include reset-list;
     display: flex;
     gap: 50px;
   }
-  &-menu {
+
+  &-link {
     color: $white;
     font-family: Roboto;
     font-size: 14px;
@@ -23,12 +25,13 @@
     letter-spacing: 0%;
     text-align: left;
   }
+
   &-cta {
     padding: 9px 15px;
     color: $white;
     font-family: $main-font;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 140%;
     letter-spacing: 0%;
     text-align: left;
