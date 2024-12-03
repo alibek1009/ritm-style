@@ -1,4 +1,4 @@
-@import "../_vars";
+@import "../vars";
 @import "../mixins";
 
 .header {
@@ -33,7 +33,7 @@
     color: $white;
     font-family: $main-font;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 140%;
     letter-spacing: 0%;
     text-align: left;
