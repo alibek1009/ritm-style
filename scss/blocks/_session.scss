@@ -1,0 +1,47 @@
+@import "../vars";
+
+.session {
+  padding-bottom: 150px;
+  &-top {
+    display: flex;
+    justify-content: center;
+  }
+  &-title {
+    margin-bottom: 100px;
+  }
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    grid-template-rows: repeat(2, 258px);
+    column-gap: 24px;
+    row-gap: 24px;
+  }
+  &-item {
+    background-image: url(/images/bg-session.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  &-item:first-child {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url(/images/bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    border-bottom: 10px solid $accent;
+  }
+  &-item-title {
+    color: $white;
+    font-family: $title-font;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+  }
+}

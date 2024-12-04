@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  max-width: calc 1346px;
+  max-width: 1346px;
   margin: 0 auto;
   padding: 0 25px;
 }
@@ -63,7 +63,7 @@ body {
   color: #fff;
   font-family: "Roboto", serif;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 140%;
   letter-spacing: 0%;
   text-align: left;
@@ -73,6 +73,7 @@ body {
 }
 
 .title {
+  display: inline-block;
   color: #fff;
   font-family: "El Messiri", serif;
   font-size: 64px;
@@ -96,7 +97,7 @@ body {
           transform: translateY(-50%);
   background-image: url("../images/title-leaf-left.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .title::after {
   content: "";
@@ -110,7 +111,7 @@ body {
           transform: translateY(-50%);
   background-image: url("../images/title-leaf-right.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .banner {
@@ -163,4 +164,63 @@ body {
 }
 .banner-subtitle::after {
   background-image: url("../images/title-leaf-white-right.svg");
+}
+
+.session {
+  padding-bottom: 150px;
+}
+.session-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.session-title {
+  margin-bottom: 100px;
+}
+.session-container {
+  display: grid;
+  grid-template-columns: repeat(3, 4fr);
+  grid-template-rows: repeat(2, 258px);
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+  row-gap: 24px;
+}
+.session-item {
+  background-image: url(/images/bg-session.jpeg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.session-item:first-child {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-image: url(/images/bg.jpeg);
+  background-position: center;
+  background-size: cover;
+  padding: 50px;
+  border-bottom: 10px solid #018abe;
+}
+.session-item-title {
+  color: #fff;
+  font-family: "El Messiri", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140%;
+  text-align: left;
 }
