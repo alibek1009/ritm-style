@@ -17,7 +17,7 @@
     row-gap: 24px;
   }
   &-item {
-    background-image: url(/images/bg-session.jpeg);
+    background-image: url(../images/bg-session.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -30,7 +30,7 @@
   &-item:first-child {
     grid-row-start: 1;
     grid-row-end: 3;
-    background-image: url(/images/bg.jpeg);
+    background-image: url(../images/bg.jpeg);
     background-position: center;
     background-size: cover;
     padding: 50px;
